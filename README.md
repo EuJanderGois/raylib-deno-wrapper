@@ -1,8 +1,8 @@
 # 🎮 Raylib Wrapper for Deno
 
-[](https://deno.land)
+[![Deno JS](https://img.shields.io/badge/deno%20js-000000?style=for-the-badge&logo=deno&logoColor=white)](https://deno.land)
 
-[](https://www.raylib.com/)  
+[![RayLib](https://img.shields.io/badge/RAYLIB-FFFFFF?style=for-the-badge&logo=raylib&logoColor=black)](https://www.raylib.com/)  
 
 [](#)  
 
