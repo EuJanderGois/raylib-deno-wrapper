@@ -1,25 +1,107 @@
-# Raylib wrapper for Deno
+# 🎮 Raylib Wrapper for Deno
 
-This repository create a wrapper with one Dinamic Library (work only on windows), it make posible to use the Raylib library in Deno.
+[](https://deno.land)
 
-> To use this wrapper in Linux or MacOS you need build the code in wrapper folder in your target platform.
+[](https://www.raylib.com/)  
 
-## Getting Started
+[](#)  
 
-To use this wrapper in the simplest way, you can clone this repository and run the main script and be happy.
+This repository provides a **dynamic library (DLL)** that allows you to use **Raylib** with **Deno**.  
+Currently, it **only works on Windows** by default.
+
+> **🛠 Want to use it on Linux or macOS?**  
+> You’ll need to **build the wrapper manually** inside the `wrapper/` folder for your target platform.
+
+---
+
+## 🚀 Getting Started
+
+### 📥 1. Clone the Repository
 
 ``` bash
-git clone https://github.com/eujandergois/raylib-deno-wrapper.git
+git clone https://github.com/EuJanderGois/raylib-deno-wrapper.git
 ```
 
-``` bash
+### ▶️ 2. Run the Project
+
+
+```bash
 deno task start
 ```
 
-[WARNING] Don't use `--watch` flag.
+⚠️ **WARNING**: Do **NOT** use the `--watch` flag, as it may cause issues with Raylib's window management.
 
-[WARNING] To build the wrapper yourself you need make the needed changes in the make file to build for your target platform. Unless you use windows.
+---
 
-[WARNIG] This wrapper only is developed for windows in my free time, and the wrapper dont include all features of raylib, but not is hard to change the code and build yourself, mainly if you are windows user and have `C++` knowledge.
+## 🏗️ Building the Wrapper
 
-[WARNING] Remember, is easy to use in windows, but to build yourself you need configure all dependencies as raylib and modify the makefile to your target platform, including if windows users. Understand language needs `C++`.
+If you want to **build the wrapper manually**, you'll need to **modify the Makefile** for your **target platform**.  
+By default, this wrapper is **designed for Windows**.
+
+### 📌 Requirements:
+
+- **Windows**: MinGW + Make
+- **Linux/macOS**: GCC + Make
+
+### 🔧 Build Instructions
+
+#### **Windows (Default)**
+
+```bash
+make
+```
+
+#### **Linux/macOS**
+
+Modify the `Makefile` and run:
+
+```bash
+make
+```
+
+---
+
+## 📁 Project Structure
+
+
+```pgsql
+
+📂 raylib-deno-wrapper/
+├── 📂 wrapper/           # C++ wrapper for Raylib
+│   ├── 📂 build          # dll files
+|	│   ├── raylib.dll
+│   ├── raylib.cpp        # Wrapper source code
+│   ├── raylib.ts         # ts file to make the wrapper exports
+│   ├── Makefile          # Build script
+├── main.ts               # the main code of application
+├── deno.json             # Deno configuration
+├── README.md             # Documentation
+├── LICENSE               # License file
+```
+
+---
+
+## 🔥 Features
+
+✔️ **Easy to use** - Works with simple **Deno bindings**  
+✔️ **Minimal setup** - Just **clone & run**  
+✔️ **Raylib support** - Uses **Raylib 5.0** for rendering  
+✔️ **Cross-platform (with modifications)**
+
+---
+
+## 📜 License
+
+This project is **open-source** and licensed under the **MIT License**. See the LICENSE file for details.
+
+---
+
+## ❤️ Contributing
+
+Do you want to improve this wrapper? PRs and contributions are welcome!
+
+- Fork the repository
+- Make your changes
+- Submit a **Pull Request**
+
+Enjoy coding! 🚀🎮
