@@ -4,7 +4,7 @@
 
 [![RayLib](https://img.shields.io/badge/RAYLIB-FFFFFF?style=for-the-badge&logo=raylib&logoColor=black)](https://www.raylib.com/)  
 
-[](#)  
+### [CHANGELOG](./CHANGELOG.MD)  
 
 This repository provides a **dynamic library (DLL)** that allows you to use **Raylib** with **Deno**.  
 Currently, it **only works on Windows** by default.

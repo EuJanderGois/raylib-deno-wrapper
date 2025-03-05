@@ -3,6 +3,8 @@
     "start": "deno run --allow-ffi --allow-read main.ts"
   },
   "imports": {
-    "@std/assert": "jsr:@std/assert@1"
-  }
+    "raylib-deno": "./wrapper/mod.ts"
+  },
+  "license": "MIT",
+  "version": "0.0.3"
 }
